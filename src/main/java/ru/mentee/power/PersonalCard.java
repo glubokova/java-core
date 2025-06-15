@@ -5,9 +5,11 @@ public class PersonalCard {
         String lastName = "Glubokova";
         String name = "Aida";
         String city = "Orenburg";
+
         int age = 23;
         double weight = 83.5;
         double height = 170.0;
+
         boolean student = true;
         char firstLetter = 'A';
 
