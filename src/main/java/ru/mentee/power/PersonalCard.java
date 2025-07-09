@@ -9,7 +9,7 @@ public class PersonalCard {
         double weight = 83.5;
         double height = 170.0;
         boolean student = true;
-        char firstLetter = 'A';
+        char firstLetter = name.charAt(0);
 
         System.out.println("==== Personal card ====");
         System.out.println("LastName: " + lastName);
