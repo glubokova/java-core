@@ -1,32 +1,34 @@
-package ru.mentee.power.variables;
+package ru.mentee.power.datatype;
 
 public class DataType {
+    public static final int B = 127;
+    public static final int I = 2147483647;
+    public static final int S = 32767;
+    public static final long L = 9223372036854775807L;
+    public static final float F = 3.14f;
+    public static final double D = 3.141592653589793f;
+    public static final char C = 'Q';
+
     public static void main(String[] args) {
-        // Целочисленные типы данных
-        byte b = 127;
-        int i = 2147483647;
-        short s = 32767;
-        long l = 9223372036854775807L;
+
+        // Целочисленные типы даннst
 
         System.out.println("=== Примитивные типы данных===");
         System.out.println("= Целочисленные =");
-        System.out.println("byte: " + b);
-        System.out.println("int:" + i);
-        System.out.println("short: " + s);
-        System.out.println("long: " + l);
+        System.out.println("byte: " + B);
+        System.out.println("int:" + I);
+        System.out.println("short: " + S);
+        System.out.println("long: " + L);
 
-        // Типы данных с плавающей точкой
-        double d = 3.141592653589793;
-        float f = 3.14f;
+        // Типы данных с плавающей точкой;
 
         System.out.println("\n\n= С плавающей точкой =");
-        System.out.println("double: " + d);
-        System.out.println("float " + f + "f");
+        System.out.println("double: " + D);
+        System.out.println("float " + F + "f");
 
         // Символьный тип данных, Unicode кодировка
 
-        char c = 'Q';
-        System.out.println("char: " + c);
+        System.out.println("char: " + C);
 
         // Логический тип данных использует значение true или false
 
@@ -47,10 +49,10 @@ public class DataType {
         System.out.println("String 2: " + fullName);
 
         // Математические операции с разными типами данных
-        int sumInt = i + 14;
-        double sumDouble = d + 1.5;
-        float sumFloat = f + 4.5f;
-        double intDouble = i + d;
+        int sumInt = I + 14;
+        double sumDouble = D + 1.5;
+        float sumFloat = F + 1.0f;
+        double intDouble = I + D;
 
         int divisionInt = 15 / 4;
         double divisionDouble = 15.5 / 4;
@@ -65,17 +67,17 @@ public class DataType {
 
         //Преобразование типов
         // Неявное преобразование
-        double id = i;
-        float fl = l;
+        double id = I;
+        float fl = L;
 
         // Явное преобразование
-        int di = (int) d;
-        byte bi = (byte) i;
+        int di = (int) D;
+        byte bi = (byte) I;
 
         //Преобразование строки в число
         String numberStr = "123";
         int fromString = Integer.parseInt(numberStr);
-        String toString = Integer.toString(i);
+        String toString = Integer.toString(I);
 
         System.out.println("\n\n=== Преобразование типов ===");
         System.out.println("Неявное преобразование, double -> int: " + di + ", float -> long: " + fl);
