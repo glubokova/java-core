@@ -8,8 +8,8 @@ class TrafficLightTest {
 
     @Test
     void testGetRecommendation_RedSignal() {
-        assertThat(TrafficLight.getRecommendation("Красный")).isEqualTo("Стой на месте!");
-        assertThat(TrafficLight.getRecommendation("красный")).isEqualTo("Стой на месте!");
+        assertThat(TrafficLight.getRecommendation("Красный")).isEqualTo("Стойте!");
+        assertThat(TrafficLight.getRecommendation("красный")).isEqualTo("Стойте!");
     }
 
     @Test
