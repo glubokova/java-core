@@ -94,7 +94,7 @@ class NumberGuessingGameTest {
 
         @Override
         public int nextInt(int bound) {
-            return value - 1; // random.nextInt(100) + 1 == value
+            return value - 1;
         }
     }
 }
