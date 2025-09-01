@@ -57,8 +57,8 @@ class NumberGuessingGameTest {
         String output = outputStream.toString();
         assertThat(output).contains("Минимум попыток: 3")
                 .contains("Максимум попыток: 5")
-                .contains("Среднее количество попыток: 4,0")
                 .contains("Сыграно игр: 2");
+        assertThat(output).containsPattern("Среднее количество попыток: 4[.,]0");
     }
 
     @Test
