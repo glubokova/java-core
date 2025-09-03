@@ -78,6 +78,9 @@ public class ShapeDrawer {
         return rhombus.toString();
     }
 
+    public void printShape(String shape) {
+        System.out.println(shape);
+    }
 
     public static void main(String[] args) {
         ShapeDrawer drawer = new ShapeDrawer();
