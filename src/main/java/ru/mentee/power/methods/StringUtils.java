@@ -1,7 +1,5 @@
 package ru.mentee.power.methods;
 
-import com.sun.source.tree.BreakTree;
-
 public class StringUtils {
     public static int countChars(String str, char target) {
         if (str == null || str.isEmpty()) return 0;
