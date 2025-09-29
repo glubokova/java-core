@@ -37,7 +37,11 @@ public class Book {
 
     @Override
     public String toString() {
-        return "\"" + title + "\" (" + year + "), " + author +
+        String title1 = (title == null) ? "<null>" : title;
+        String author1 = (author == null) ? "<null>" : author;
+        String year1 = (year == 0 && title == null) ? "<null>" :
+                String.valueOf(year);
+        return "\"" + title1 + "\" (" + year1 + "), " + author1 +
                 " - " + (available ? "доступна" : "выдана");
     }
 }
